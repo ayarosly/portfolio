@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alia's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alegreya+Sans:wght@900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        /* Typography and Color Theme */
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Alegreya', serif;
+            line-height: 1.6;
+            background-color: #f4f1ec;
+            color: #3e362e;
+        }
+
+        h2 {
+            font-family: 'Alegreya Sans', sans-serif;
+            font-weight: 900;
+            color: #865d36;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        /* Form Styling */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            resize: vertical;
+            background-color: #f9f9f9;
+            color: #3e362e;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background-color: #865d36;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #6e4b2f;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #865d36;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #6e4b2f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Alia's Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="navbar-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out through this form.
+            I’d love to hear from you!</p>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="mailto:alia@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">&#xf09a;</a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">&#xf16d;</a>
+            <a href="https://www.twitter.com" target="_blank" title="Twitter">&#xf099;</a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">&#xf08c;</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">🔵</a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">🔷</a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">🔹</a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">🟣</a>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> |
+                <a href="#experience">Experience</a> |
+                <a href="#gallery">Gallery</a> |
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                &copy; 2023 Alia's Portfolio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to toggle mobile menu visibility
+        function toggleMenu() {
+            const navbarLinks = document.getElementById("navbar-links");
+            navbarLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

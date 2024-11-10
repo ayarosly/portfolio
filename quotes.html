@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Quotes - Alia's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alegreya+Sans:wght@900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Use Alegreya for body text and Alegreya Sans Black for headings */
+        body {
+            font-family: 'Alegreya', serif;
+            line-height: 1.6;
+            background-color: #f4f1ec;
+            /* light neutral background */
+            color: #3e362e;
+            /* dark brown text */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Alegreya Sans', sans-serif;
+            font-weight: 900;
+            color: #865d36;
+            /* muted brown for header */
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            /* secondary text color */
+            margin-bottom: 40px;
+        }
+
+        /* Quote Card Styling */
+        .quote-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .quote-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .quote-text {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #3e362e;
+            /* primary dark brown */
+            margin-bottom: 15px;
+        }
+
+        .quote-author {
+            font-weight: bold;
+            color: #865d36;
+            /* muted brown for author names */
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Alia's Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="navbar-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Favorite Quotes</h2>
+        <p>Here are some quotes that inspire me, keep me grounded, or simply make me smile. I hope they resonate with
+            you too!</p>
+
+        <!-- Quote 1 -->
+        <div class="quote-card">
+            <p class="quote-text">"The only limit to our realization of tomorrow is our doubts of today."</p>
+            <p class="quote-author">- Franklin D. Roosevelt</p>
+        </div>
+
+        <!-- Quote 2 -->
+        <div class="quote-card">
+            <p class="quote-text">"Success is not final, failure is not fatal: It is the courage to continue that
+                counts."</p>
+            <p class="quote-author">- Winston Churchill</p>
+        </div>
+
+        <!-- Quote 3 -->
+        <div class="quote-card">
+            <p class="quote-text">"Happiness is not something ready-made. It comes from your own actions."</p>
+            <p class="quote-author">- Dalai Lama</p>
+        </div>
+
+        <!-- Quote 4 -->
+        <div class="quote-card">
+            <p class="quote-text">"Don't watch the clock; do what it does. Keep going."</p>
+            <p class="quote-author">- Sam Levenson</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">🔵</a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">🔷</a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">🔹</a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">🟣</a>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#experience">Experience</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                &copy; 2023 Alia's Portfolio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to toggle mobile menu visibility
+        function toggleMenu() {
+            const navbarLinks = document.getElementById("navbar-links");
+            navbarLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

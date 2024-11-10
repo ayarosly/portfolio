@@ -1,0 +1,128 @@
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  background-color: #3e362e; /* Dark brown */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin-left: 20px;
+}
+/* Link hover effect */
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #865d36; /* Muted brown */
+  transition: width 0.3s ease;
+}
+.navbar ul li a:hover {
+  color: #93785b; /* Light brown */
+}
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+/* Responsive menu for mobile view */
+.navbar .menu-icon {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* Toggle menu styling */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #3e362e; /* Dark brown */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  .navbar .menu-icon {
+    display: block;
+  }
+  .navbar ul.show {
+    display: flex;
+  }
+}
+
+/* Footer styling */
+.footer {
+  background-color: #3e362e; /* Dark brown */
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.footer .social-icons a {
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer .social-icons a:hover {
+  color: #ac8968; /* Light muted brown */
+}
+.footer .footer-links {
+  margin: 15px 0;
+  font-size: 0.9em;
+}
+.footer .footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer .footer-links a:hover {
+  color: #ac8968; /* Light muted brown */
+}
+.footer .copyright {
+  font-size: 0.85em;
+  margin-top: 15px;
+  color: #a69080; /* Light tan */
+}
+
+/* footer image */
+.footer img {
+  width: 50px;
+  margin: 0 auto;
+  display: block;
+}

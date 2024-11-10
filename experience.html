@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience - Alia's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Alegreya+Sans:wght@900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Font and body */
+        body {
+            font-family: 'Alegreya', serif;
+            line-height: 1.6;
+            background-color: #f4f1ec;
+            /* light neutral background for consistency */
+            color: #3e362e;
+        }
+
+        h2 {
+            font-family: 'Alegreya Sans', sans-serif;
+            font-weight: 900;
+            color: #865d36;
+            /* Muted brown */
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h3 {
+            font-size: 1.5em;
+            color: #865d36;
+            margin-bottom: 10px;
+        }
+
+        .section p,
+        .section ul li {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Skill list styling */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills .skill {
+            padding: 8px 12px;
+            background-color: #865d36;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Alia's Portfolio</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="navbar-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>My Experience</h2>
+
+        <!-- Education and Practical Training Section -->
+        <div class="section">
+            <h3>Education & Practical Training</h3>
+            <p>
+                Currently pursuing a Bachelor’s degree in Information Management at XYZ University. During my industrial
+                training at ABC Company, I developed core skills in data management, record keeping, and practical
+                software applications.
+            </p>
+        </div>
+
+        <!-- Special Projects Section -->
+        <div class="section">
+            <h3>Special Projects</h3>
+            <ul>
+                <li><strong>Event Management:</strong> Organized the Independence Day celebration event, overseeing
+                    logistics, team coordination, and event scheduling.
+                </li>
+                <li><strong>Records Management:</strong> Led a project on file organization, contributing to improved
+                    accessibility and filing efficiency.
+                </li>
+                <li><strong>System Development:</strong> Collaborated in a project that implemented a record management
+                    system for internal use, which optimized data retrieval by 40%.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contributions to Team or Organization -->
+        <div class="section">
+            <h3>Contributions to Team & Organization</h3>
+            <p>
+                Consistently recognized as a team player with a proactive attitude, I contributed to new ideas in record
+                management, provided mentorship to peers, and assisted in documentation processes, which helped
+                streamline workflow.
+            </p>
+        </div>
+
+        <!-- Skills and Competencies Section -->
+        <div class="section">
+            <h3>Skills & Competencies</h3>
+            <div class="skills">
+                <div class="skill">Data Management</div>
+                <div class="skill">Record Keeping</div>
+                <div class="skill">Event Coordination</div>
+                <div class="skill">CapCut for Graphics</div>
+                <div class="skill">Team Collaboration</div>
+                <div class="skill">Time Management</div>
+                <div class="skill">Communication</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">🔵</a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">🔷</a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">🔹</a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">🟣</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> |
+                <a href="#experience">Experience</a> |
+                <a href="#gallery">Gallery</a> |
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2023 Alia's Portfolio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to toggle mobile menu visibility
+        function toggleMenu() {
+            const navbarLinks = document.getElementById("navbar-links");
+            navbarLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
