@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Navbar</title>
     <style>
-      /* Reset */
       * {
         margin: 0;
         padding: 0;
@@ -16,7 +15,6 @@
         background-color: #f9f9f9;
         color: #333;
       }
-      /* Navbar styling */
       .navbar {
         width: 100%;
         background-color: #4a90e2;
@@ -37,7 +35,6 @@
       .navbar ul li {
         margin-left: 20px;
       }
-      /* Link hover effect */
       .navbar ul li a {
         text-decoration: none;
         color: #fff;
@@ -62,13 +59,11 @@
       .navbar ul li a:hover::after {
         width: 100%;
       }
-      /* Responsive menu for mobile view */
       .navbar .menu-icon {
         display: none;
         font-size: 1.5em;
         cursor: pointer;
       }
-      /* Toggle menu styling */
       @media (max-width: 768px) {
         .navbar ul {
           display: none;
@@ -94,7 +89,6 @@
     </style>
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">Alia's Portfolio</div>
       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
@@ -109,7 +103,6 @@
     </nav>
 
     <script>
-      // Function to toggle mobile menu visibility
       function toggleMenu() {
         const navbarLinks = document.getElementById("navbar-links");
         navbarLinks.classList.toggle("show");

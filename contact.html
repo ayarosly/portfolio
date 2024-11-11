@@ -11,7 +11,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-        /* General Styling */
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +22,6 @@
             height: 100%;
         }
 
-        /* Typography and Color Theme */
         body {
             display: flex;
             flex-direction: column;
@@ -54,7 +52,6 @@
             flex-grow: 1;
         }
 
-        /* Form Styling */
         .contact-form {
             display: flex;
             flex-direction: column;
@@ -88,7 +85,6 @@
             background-color: #6e4b2f;
         }
 
-        /* Social Media Links */
         .social-links {
             margin-top: 30px;
             display: flex;
@@ -111,7 +107,6 @@
 
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Alia's Portfolio</div>
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
@@ -130,7 +125,6 @@
         <p>If you have any questions, suggestions, or just want to say hello, feel free to reach out through this form.
             I’d love to hear from you!</p>
 
-        <!-- Contact Form -->
         <form class="contact-form" action="mailto:alia@example.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -139,26 +133,21 @@
         </form>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <!-- Social Media Icons -->
             <div class="social-icons">
                 <a href="https://www.instagram.com/aya.rosly/profilecard/?igsh=Y2g1aW9saHU5emxi" target="_blank"
                     aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <!-- linkedin -->
                 <a href="https://www.linkedin.com/in/alia-rosly-589a17259/" target="_blank" aria-label="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
-                <!-- email -->
                 <a href="mailto:aliarosly0004@gmail.com" aria-label="Email">
                     <i class="bi bi-envelope"></i>
                 </a>
             </div>
 
-            <!-- Footer Links -->
             <div class="footer-links">
                 <a href="about.html">About</a> |
                 <a href="portfolio.html">Portfolio</a> |
@@ -168,7 +157,6 @@
                 <a href="contact.html">Contact</a>
             </div>
 
-            <!-- Copyright -->
             <div class="copyright">
                 &copy; 2023 Alia's Portfolio. All rights reserved.
             </div>
@@ -176,7 +164,6 @@
     </footer>
 
     <script>
-        // Function to toggle mobile menu visibility
         function toggleMenu() {
             const navbarLinks = document.getElementById("navbar-links");
             navbarLinks.classList.toggle("show");
